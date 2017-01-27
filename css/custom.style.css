@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    user-select: none;
+}
+
+header {
+    background-color: crimson;
+    min-height: 120px;
+    padding: 10px;
+    box-shadow: 0px 0px 3px 0px cadetblue;
+}
+
+body > header > div > div {
+    color: white;
+}
+
+#social-container {
+    min-height: 300px;
+    align-items: center;
+}
+
+#social-container > picture {
+    height: 600px;
+    width: 90%;
+    max-height: 100%;
+    background-color: gainsboro;
+}
+
+#social-container > picture > img {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#social-container > #picture-caption {
+    width: 90%;
+    background: #EAEAEA;
+    color: #666666;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.container {
+    background-color: snow;
+    padding: 20px;
+}
+
+.card {
+    margin: 0 0 15px 0;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 0 5px 0 #90eec3;
+}
+
+.card > .img-container {
+    min-height: 150px;
+    background-color: white;
+}
+
+.card > .img-container > picture {
+    width: 100%;
+    max-width: 100%;
+}
+
+.card > .img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.card > .info-container {
+    background-color: crimson;
+    color: white;
+    width: 100%;
+    justify-content: center;
+    height: 45px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.card > .info-container > h3 {
+    margin: 0;
+}
+
+.card > .card-disclaimer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 48px;
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: -1px 1px 5px 0px grey;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 48px;
+    transform: scale(0);
+    transform-origin: top right;
+    transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.card > .card-disclaimer:before {
+    content: "\1F441";
+}
+
+.card > .card-disclaimer:after {
+    content: "See details";
+    font-size: 8px;
+    color: white;
+    font-weight: 500;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.card:hover > .card-disclaimer {
+    transition: transform 0.2s ease-in;
+    transform: scale(1);
+}
+
+
+hr {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.content-wrapper {
+    height: 100%;
+}
+
+.project-info-wrapper {
+    padding: 20px;
+    height: 100%;
+}
+
+.project-info-wrapper > h3 {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-shadow: -1px 1px 1px cadetblue;
+    color: crimson;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.project-info-wrapper > div {
+    padding: 20px 5px;
+    padding-bottom: 0;
+    max-height: 100%;
+    overflow-y: scroll;
+    font-size: 22px;
+}
+
+.project-info-wrapper .info-detail {
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.project-info-wrapper .info-detail > span {
+
+}
+
+.project-info-wrapper .info-detail > span:first-child {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.project-info-wrapper .info-detail > span:last-child {
+    color: grey;
+    font-weight: lighter;
+}
+
+.anchor-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.anchor-wrapper > .project-anchor {
+    min-width: 120px;
+    width: 45%;
+    margin: 10px;
+    box-shadow: 0 1px 5px -2px cadetblue;
+    height: 50px;
+    display: flex;
+    border: 1px solid gainsboro;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.anchor-wrapper > .project-anchor > img {
+    width: 25px;
+    height: 25px;
+    max-width: 100%;
+}
+
+footer {
+    box-shadow: 0 0 1px 0 cadetblue;
+}
+
+footer .about-me {
+    background-color: cadetblue;
+    color: white;
+    letter-spacing: 1px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+footer .author-picture {
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+footer .author-picture > img {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px cadetblue;
+}
+
+footer .footer-end {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    background: bisque;
+    color: crimson;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+    .card > .info-container {
+        height: 35px;
+    }
+
+    .anchor-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .anchor-wrapper > .project-anchor {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #social-container > picture {
+        height: 300px;
+    }
+
+    #social-container > picture > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 4px;
+    }
+
+    footer .about-me {
+        width: 100%;
+    }
+
+    footer .author-picture {
+        display: none;
+    }
+
+}
